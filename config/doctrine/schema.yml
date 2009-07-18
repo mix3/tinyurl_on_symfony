@@ -1,0 +1,12 @@
+TinyUrl:
+  tableName: tinyurl
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    hash:
+      type: string(6)
+    url:
+      type: string(255)
+      notnull: true

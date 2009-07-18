@@ -1,0 +1,293 @@
+Jul 17 14:21:13 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 17 14:21:13 symfony [info] {sfPatternRouting} Connect sfRoute "new" (/new)
+Jul 17 14:21:13 symfony [info] {sfPatternRouting} Connect sfRoute "create" (/create)
+Jul 17 14:21:13 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_index" (/admin)
+Jul 17 14:21:13 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_" (/admin/:action)
+Jul 17 14:21:13 symfony [info] {sfPatternRouting} Connect sfRoute "redirect" (/*)
+Jul 17 14:21:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jul 17 14:21:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jul 17 14:21:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jul 17 14:21:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'tinyurl',  'action' => 'index',)
+Jul 17 14:21:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 17 14:21:13 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 17 14:21:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 17 14:21:13 symfony [info] {tinyurlActions} Call "tinyurlActions->executeIndex()"
+Jul 17 14:21:13 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/indexSuccess.php"
+Jul 17 14:21:13 symfony [info] {sfPartialView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/_form.php"
+Jul 17 14:21:13 symfony [info] {sfPHPView} Decorate content with "/home/mix3/myproject/apps/tinyurl/templates/layout.php"
+Jul 17 14:21:13 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/templates/layout.php"
+Jul 17 14:21:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 17 14:21:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 17 14:21:13 symfony [info] {sfWebDebugLogger} Configuration 92.14 ms (9)
+Jul 17 14:21:13 symfony [info] {sfWebDebugLogger} Action "tinyurl/index" 26.25 ms (1)
+Jul 17 14:21:13 symfony [info] {sfWebDebugLogger} View "Success" for "tinyurl/index" 21.65 ms (1)
+Jul 17 14:21:13 symfony [info] {sfWebDebugLogger} Partial "tinyurl/_form" 4.17 ms (1)
+Jul 17 14:21:13 symfony [info] {sfWebResponse} Send content (27556 o)
+Jul 17 14:21:19 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 17 14:21:19 symfony [info] {sfPatternRouting} Connect sfRoute "new" (/new)
+Jul 17 14:21:19 symfony [info] {sfPatternRouting} Connect sfRoute "create" (/create)
+Jul 17 14:21:19 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_index" (/admin)
+Jul 17 14:21:19 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_" (/admin/:action)
+Jul 17 14:21:19 symfony [info] {sfPatternRouting} Connect sfRoute "redirect" (/*)
+Jul 17 14:21:19 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jul 17 14:21:19 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jul 17 14:21:19 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jul 17 14:21:19 symfony [info] {sfPatternRouting} Match route "redirect" (/*) for /test with parameters array (  'test' => true,  'module' => 'tinyurl',  'action' => 'redirect',)
+Jul 17 14:21:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 17 14:21:19 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 17 14:21:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 17 14:21:19 symfony [info] {tinyurlActions} Call "tinyurlActions->executeRedirect()"
+Jul 17 14:21:19 symfony [info] {sfDoctrineLogger} executeQuery : SELECT t.id AS t__id, t.hash AS t__hash, t.url AS t__url FROM tinyurl t WHERE t.hash = ? LIMIT 1 - (test )
+Jul 17 14:21:19 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/redirectError.php"
+Jul 17 14:21:19 symfony [err] {sfException} Call to undefined method sfPHPView::url_for.
+Jul 17 16:49:14 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 17 16:49:14 symfony [info] {sfPatternRouting} Connect sfRoute "new" (/new)
+Jul 17 16:49:14 symfony [info] {sfPatternRouting} Connect sfRoute "create" (/create)
+Jul 17 16:49:14 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_index" (/admin)
+Jul 17 16:49:14 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_" (/admin/:action)
+Jul 17 16:49:14 symfony [info] {sfPatternRouting} Connect sfRoute "redirect" (/*)
+Jul 17 16:49:14 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jul 17 16:49:14 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jul 17 16:49:14 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jul 17 16:49:14 symfony [info] {sfPatternRouting} Match route "redirect" (/*) for /test with parameters array (  'test' => true,  'module' => 'tinyurl',  'action' => 'redirect',)
+Jul 17 16:49:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 17 16:49:14 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 17 16:49:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 17 16:49:14 symfony [info] {tinyurlActions} Call "tinyurlActions->executeRedirect()"
+Jul 17 16:49:14 symfony [info] {sfDoctrineLogger} executeQuery : SELECT t.id AS t__id, t.hash AS t__hash, t.url AS t__url FROM tinyurl t WHERE t.hash = ? LIMIT 1 - (test )
+Jul 17 16:49:14 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/redirectError.php"
+Jul 17 16:49:35 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 17 16:49:35 symfony [info] {sfPatternRouting} Connect sfRoute "new" (/new)
+Jul 17 16:49:35 symfony [info] {sfPatternRouting} Connect sfRoute "create" (/create)
+Jul 17 16:49:35 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_index" (/admin)
+Jul 17 16:49:35 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_" (/admin/:action)
+Jul 17 16:49:35 symfony [info] {sfPatternRouting} Connect sfRoute "redirect" (/*)
+Jul 17 16:49:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jul 17 16:49:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jul 17 16:49:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jul 17 16:49:35 symfony [info] {sfPatternRouting} Match route "redirect" (/*) for /test with parameters array (  'test' => true,  'module' => 'tinyurl',  'action' => 'redirect',)
+Jul 17 16:49:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 17 16:49:35 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 17 16:49:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 17 16:49:35 symfony [info] {tinyurlActions} Call "tinyurlActions->executeRedirect()"
+Jul 17 16:49:35 symfony [info] {sfDoctrineLogger} executeQuery : SELECT t.id AS t__id, t.hash AS t__hash, t.url AS t__url FROM tinyurl t WHERE t.hash = ? LIMIT 1 - (test )
+Jul 17 16:49:35 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/redirectError.php"
+Jul 17 16:49:35 symfony [err] {sfConfigurationException} Unable to find a matching route to generate url for params "NULL".
+Jul 18 02:03:52 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 02:03:52 symfony [info] {sfPatternRouting} Connect sfRoute "new" (/new)
+Jul 18 02:03:52 symfony [info] {sfPatternRouting} Connect sfRoute "create" (/create)
+Jul 18 02:03:52 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_index" (/admin)
+Jul 18 02:03:52 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_" (/admin/:action)
+Jul 18 02:03:52 symfony [info] {sfPatternRouting} Connect sfRoute "redirect" (/*)
+Jul 18 02:03:52 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jul 18 02:03:52 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jul 18 02:03:52 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jul 18 02:03:52 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'tinyurl',  'action' => 'index',)
+Jul 18 02:03:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 02:03:52 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 02:03:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 02:03:52 symfony [info] {tinyurlActions} Call "tinyurlActions->executeIndex()"
+Jul 18 02:03:52 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/indexSuccess.php"
+Jul 18 02:03:52 symfony [info] {sfPartialView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/_form.php"
+Jul 18 02:03:52 symfony [info] {sfPHPView} Decorate content with "/home/mix3/myproject/apps/tinyurl/templates/layout.php"
+Jul 18 02:03:52 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/templates/layout.php"
+Jul 18 02:03:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 02:03:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 02:03:52 symfony [info] {sfWebDebugLogger} Configuration 1.46 ms (9)
+Jul 18 02:03:52 symfony [info] {sfWebDebugLogger} Action "tinyurl/index" 31.84 ms (1)
+Jul 18 02:03:52 symfony [info] {sfWebDebugLogger} View "Success" for "tinyurl/index" 18.81 ms (1)
+Jul 18 02:03:52 symfony [info] {sfWebDebugLogger} Partial "tinyurl/_form" 5.30 ms (1)
+Jul 18 02:03:52 symfony [info] {sfWebResponse} Send content (27230 o)
+Jul 18 02:03:56 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 02:03:56 symfony [info] {sfPatternRouting} Connect sfRoute "new" (/new)
+Jul 18 02:03:56 symfony [info] {sfPatternRouting} Connect sfRoute "create" (/create)
+Jul 18 02:03:56 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_index" (/admin)
+Jul 18 02:03:56 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_" (/admin/:action)
+Jul 18 02:03:56 symfony [info] {sfPatternRouting} Connect sfRoute "redirect" (/*)
+Jul 18 02:03:56 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jul 18 02:03:56 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jul 18 02:03:56 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jul 18 02:03:56 symfony [info] {sfPatternRouting} Match route "redirect" (/*) for /t with parameters array (  't' => true,  'module' => 'tinyurl',  'action' => 'redirect',)
+Jul 18 02:03:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 02:03:56 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 02:03:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 02:03:56 symfony [info] {tinyurlActions} Call "tinyurlActions->executeRedirect()"
+Jul 18 02:03:56 symfony [info] {sfDoctrineLogger} executeQuery : SELECT t.id AS t__id, t.hash AS t__hash, t.url AS t__url FROM tinyurl t WHERE t.hash = ? LIMIT 1 - (t )
+Jul 18 02:03:56 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/redirectError.php"
+Jul 18 02:03:56 symfony [err] {sfConfigurationException} Unable to find a matching route to generate url for params "NULL".
+Jul 18 02:05:11 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 02:05:11 symfony [info] {sfPatternRouting} Connect sfRoute "new" (/new)
+Jul 18 02:05:11 symfony [info] {sfPatternRouting} Connect sfRoute "create" (/create)
+Jul 18 02:05:11 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_index" (/admin)
+Jul 18 02:05:11 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_" (/admin/:action)
+Jul 18 02:05:11 symfony [info] {sfPatternRouting} Connect sfRoute "redirect" (/*)
+Jul 18 02:05:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jul 18 02:05:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jul 18 02:05:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jul 18 02:05:11 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'tinyurl',  'action' => 'index',)
+Jul 18 02:05:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 02:05:11 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 02:05:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 02:05:11 symfony [info] {tinyurlActions} Call "tinyurlActions->executeIndex()"
+Jul 18 02:05:11 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/indexSuccess.php"
+Jul 18 02:05:11 symfony [info] {sfPartialView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/_form.php"
+Jul 18 02:05:11 symfony [info] {sfPHPView} Decorate content with "/home/mix3/myproject/apps/tinyurl/templates/layout.php"
+Jul 18 02:05:11 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/templates/layout.php"
+Jul 18 02:05:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 02:05:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 02:05:11 symfony [info] {sfWebDebugLogger} Configuration 2.24 ms (9)
+Jul 18 02:05:11 symfony [info] {sfWebDebugLogger} Action "tinyurl/index" 43.92 ms (1)
+Jul 18 02:05:11 symfony [info] {sfWebDebugLogger} View "Success" for "tinyurl/index" 23.57 ms (1)
+Jul 18 02:05:11 symfony [info] {sfWebDebugLogger} Partial "tinyurl/_form" 6.21 ms (1)
+Jul 18 02:05:11 symfony [info] {sfWebResponse} Send content (27554 o)
+Jul 18 02:05:13 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 02:05:13 symfony [info] {sfPatternRouting} Connect sfRoute "new" (/new)
+Jul 18 02:05:13 symfony [info] {sfPatternRouting} Connect sfRoute "create" (/create)
+Jul 18 02:05:13 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_index" (/admin)
+Jul 18 02:05:13 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_" (/admin/:action)
+Jul 18 02:05:13 symfony [info] {sfPatternRouting} Connect sfRoute "redirect" (/*)
+Jul 18 02:05:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jul 18 02:05:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jul 18 02:05:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jul 18 02:05:13 symfony [info] {sfPatternRouting} Match route "redirect" (/*) for /t with parameters array (  't' => true,  'module' => 'tinyurl',  'action' => 'redirect',)
+Jul 18 02:05:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 02:05:13 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 02:05:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 02:05:13 symfony [info] {tinyurlActions} Call "tinyurlActions->executeRedirect()"
+Jul 18 02:05:13 symfony [info] {sfDoctrineLogger} executeQuery : SELECT t.id AS t__id, t.hash AS t__hash, t.url AS t__url FROM tinyurl t WHERE t.hash = ? LIMIT 1 - (t )
+Jul 18 02:05:13 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/redirectError.php"
+Jul 18 02:05:13 symfony [err] {sfException} Call to undefined method sfPHPView::url_for.
+Jul 18 02:05:34 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 02:05:34 symfony [info] {sfPatternRouting} Connect sfRoute "new" (/new)
+Jul 18 02:05:34 symfony [info] {sfPatternRouting} Connect sfRoute "create" (/create)
+Jul 18 02:05:34 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_index" (/admin)
+Jul 18 02:05:34 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_" (/admin/:action)
+Jul 18 02:05:34 symfony [info] {sfPatternRouting} Connect sfRoute "redirect" (/*)
+Jul 18 02:05:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jul 18 02:05:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jul 18 02:05:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jul 18 02:05:34 symfony [info] {sfPatternRouting} Match route "redirect" (/*) for /t with parameters array (  't' => true,  'module' => 'tinyurl',  'action' => 'redirect',)
+Jul 18 02:05:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 02:05:34 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 02:05:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 02:05:34 symfony [info] {tinyurlActions} Call "tinyurlActions->executeRedirect()"
+Jul 18 02:05:34 symfony [info] {sfDoctrineLogger} executeQuery : SELECT t.id AS t__id, t.hash AS t__hash, t.url AS t__url FROM tinyurl t WHERE t.hash = ? LIMIT 1 - (t )
+Jul 18 02:05:34 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/redirectError.php"
+Jul 18 02:05:34 symfony [err] {sfException} Call to undefined method sfPHPView::url_for.
+Jul 18 02:05:39 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 02:05:39 symfony [info] {sfPatternRouting} Connect sfRoute "new" (/new)
+Jul 18 02:05:39 symfony [info] {sfPatternRouting} Connect sfRoute "create" (/create)
+Jul 18 02:05:39 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_index" (/admin)
+Jul 18 02:05:39 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_" (/admin/:action)
+Jul 18 02:05:39 symfony [info] {sfPatternRouting} Connect sfRoute "redirect" (/*)
+Jul 18 02:05:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jul 18 02:05:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jul 18 02:05:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jul 18 02:05:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'tinyurl',  'action' => 'index',)
+Jul 18 02:05:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 02:05:39 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 02:05:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 02:05:39 symfony [info] {tinyurlActions} Call "tinyurlActions->executeIndex()"
+Jul 18 02:05:39 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/indexSuccess.php"
+Jul 18 02:05:39 symfony [info] {sfPartialView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/_form.php"
+Jul 18 02:05:39 symfony [info] {sfPHPView} Decorate content with "/home/mix3/myproject/apps/tinyurl/templates/layout.php"
+Jul 18 02:05:39 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/templates/layout.php"
+Jul 18 02:05:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 02:05:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 02:05:39 symfony [info] {sfWebDebugLogger} Configuration 1.47 ms (9)
+Jul 18 02:05:39 symfony [info] {sfWebDebugLogger} Action "tinyurl/index" 34.30 ms (1)
+Jul 18 02:05:39 symfony [info] {sfWebDebugLogger} View "Success" for "tinyurl/index" 15.73 ms (1)
+Jul 18 02:05:39 symfony [info] {sfWebDebugLogger} Partial "tinyurl/_form" 4.67 ms (1)
+Jul 18 02:05:39 symfony [info] {sfWebResponse} Send content (27554 o)
+Jul 18 02:05:43 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 02:05:43 symfony [info] {sfPatternRouting} Connect sfRoute "new" (/new)
+Jul 18 02:05:43 symfony [info] {sfPatternRouting} Connect sfRoute "create" (/create)
+Jul 18 02:05:43 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_index" (/admin)
+Jul 18 02:05:43 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_" (/admin/:action)
+Jul 18 02:05:43 symfony [info] {sfPatternRouting} Connect sfRoute "redirect" (/*)
+Jul 18 02:05:43 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jul 18 02:05:43 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jul 18 02:05:43 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jul 18 02:05:43 symfony [info] {sfPatternRouting} Match route "redirect" (/*) for /t with parameters array (  't' => true,  'module' => 'tinyurl',  'action' => 'redirect',)
+Jul 18 02:05:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 02:05:43 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 02:05:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 02:05:43 symfony [info] {tinyurlActions} Call "tinyurlActions->executeRedirect()"
+Jul 18 02:05:43 symfony [info] {sfDoctrineLogger} executeQuery : SELECT t.id AS t__id, t.hash AS t__hash, t.url AS t__url FROM tinyurl t WHERE t.hash = ? LIMIT 1 - (t )
+Jul 18 02:05:43 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/redirectError.php"
+Jul 18 02:05:43 symfony [err] {sfException} Call to undefined method sfPHPView::url_for.
+Jul 18 02:06:47 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 02:06:47 symfony [info] {sfPatternRouting} Connect sfRoute "new" (/new)
+Jul 18 02:06:47 symfony [info] {sfPatternRouting} Connect sfRoute "create" (/create)
+Jul 18 02:06:47 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_index" (/admin)
+Jul 18 02:06:47 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_" (/admin/:action)
+Jul 18 02:06:47 symfony [info] {sfPatternRouting} Connect sfRoute "redirect" (/*)
+Jul 18 02:06:47 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jul 18 02:06:47 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jul 18 02:06:47 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jul 18 02:06:47 symfony [info] {sfPatternRouting} Match route "redirect" (/*) for /t with parameters array (  't' => true,  'module' => 'tinyurl',  'action' => 'redirect',)
+Jul 18 02:06:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 02:06:47 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 02:06:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 02:06:47 symfony [info] {tinyurlActions} Call "tinyurlActions->executeRedirect()"
+Jul 18 02:06:47 symfony [info] {sfDoctrineLogger} executeQuery : SELECT t.id AS t__id, t.hash AS t__hash, t.url AS t__url FROM tinyurl t WHERE t.hash = ? LIMIT 1 - (t )
+Jul 18 02:06:47 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/redirectError.php"
+Jul 18 02:06:47 symfony [info] {sfPHPView} Decorate content with "/home/mix3/myproject/apps/tinyurl/templates/layout.php"
+Jul 18 02:06:47 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/templates/layout.php"
+Jul 18 02:06:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 02:06:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 02:06:47 symfony [info] {sfWebDebugLogger} Configuration 1.79 ms (9)
+Jul 18 02:06:47 symfony [info] {sfWebDebugLogger} Action "tinyurl/redirect" 53.54 ms (1)
+Jul 18 02:06:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jul 18 02:06:47 symfony [info] {sfWebDebugLogger} View "Error" for "tinyurl/redirect" 11.41 ms (1)
+Jul 18 02:06:47 symfony [info] {sfWebResponse} Send content (27731 o)
+Jul 18 02:07:26 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 02:07:26 symfony [info] {sfPatternRouting} Connect sfRoute "new" (/new)
+Jul 18 02:07:26 symfony [info] {sfPatternRouting} Connect sfRoute "create" (/create)
+Jul 18 02:07:26 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_index" (/admin)
+Jul 18 02:07:26 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_" (/admin/:action)
+Jul 18 02:07:26 symfony [info] {sfPatternRouting} Connect sfRoute "redirect" (/*)
+Jul 18 02:07:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jul 18 02:07:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jul 18 02:07:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jul 18 02:07:26 symfony [info] {sfPatternRouting} Match route "redirect" (/*) for /t with parameters array (  't' => true,  'module' => 'tinyurl',  'action' => 'redirect',)
+Jul 18 02:07:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 02:07:26 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 02:07:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 02:07:26 symfony [info] {tinyurlActions} Call "tinyurlActions->executeRedirect()"
+Jul 18 02:07:26 symfony [info] {sfDoctrineLogger} executeQuery : SELECT t.id AS t__id, t.hash AS t__hash, t.url AS t__url FROM tinyurl t WHERE t.hash = ? LIMIT 1 - (t )
+Jul 18 02:07:26 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/redirectError.php"
+Jul 18 02:07:26 symfony [info] {sfPHPView} Decorate content with "/home/mix3/myproject/apps/tinyurl/templates/layout.php"
+Jul 18 02:07:26 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/templates/layout.php"
+Jul 18 02:07:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 02:07:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 02:07:26 symfony [info] {sfWebDebugLogger} Configuration 1.59 ms (9)
+Jul 18 02:07:26 symfony [info] {sfWebDebugLogger} Action "tinyurl/redirect" 49.60 ms (1)
+Jul 18 02:07:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jul 18 02:07:26 symfony [info] {sfWebDebugLogger} View "Error" for "tinyurl/redirect" 14.76 ms (1)
+Jul 18 02:07:26 symfony [info] {sfWebResponse} Send content (27778 o)
+Jul 18 02:08:21 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 02:08:21 symfony [info] {sfPatternRouting} Connect sfRoute "new" (/new)
+Jul 18 02:08:21 symfony [info] {sfPatternRouting} Connect sfRoute "create" (/create)
+Jul 18 02:08:21 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_index" (/admin)
+Jul 18 02:08:21 symfony [info] {sfPatternRouting} Connect sfRoute "tinyurl_" (/admin/:action)
+Jul 18 02:08:21 symfony [info] {sfPatternRouting} Connect sfRoute "redirect" (/*)
+Jul 18 02:08:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Jul 18 02:08:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Jul 18 02:08:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Jul 18 02:08:21 symfony [info] {sfPatternRouting} Match route "redirect" (/*) for /t with parameters array (  't' => true,  'module' => 'tinyurl',  'action' => 'redirect',)
+Jul 18 02:08:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 02:08:21 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 02:08:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 02:08:21 symfony [info] {tinyurlActions} Call "tinyurlActions->executeRedirect()"
+Jul 18 02:08:21 symfony [info] {sfDoctrineLogger} executeQuery : SELECT t.id AS t__id, t.hash AS t__hash, t.url AS t__url FROM tinyurl t WHERE t.hash = ? LIMIT 1 - (t )
+Jul 18 02:08:21 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/modules/tinyurl/templates/redirectError.php"
+Jul 18 02:08:21 symfony [info] {sfPHPView} Decorate content with "/home/mix3/myproject/apps/tinyurl/templates/layout.php"
+Jul 18 02:08:21 symfony [info] {sfPHPView} Render "/home/mix3/myproject/apps/tinyurl/templates/layout.php"
+Jul 18 02:08:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 02:08:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 02:08:21 symfony [info] {sfWebDebugLogger} Configuration 1.34 ms (9)
+Jul 18 02:08:21 symfony [info] {sfWebDebugLogger} Action "tinyurl/redirect" 64.03 ms (1)
+Jul 18 02:08:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jul 18 02:08:21 symfony [info] {sfWebDebugLogger} View "Error" for "tinyurl/redirect" 14.07 ms (1)
+Jul 18 02:08:21 symfony [info] {sfWebResponse} Send content (27804 o)

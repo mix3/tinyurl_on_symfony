@@ -1,0 +1,23 @@
+homepage:
+  url:   /
+  param: { module: tinyurl, action: index }
+
+new:
+  url:   /new
+  param: { module: tinyurl, action: new }
+
+create:
+  url:   /create
+  param: { module: tinyurl, action: create }
+
+tinyurl_index:
+  url:   /admin
+  param: { module: admin, action: index }
+
+tinyurl_:
+  url:   /admin/:action
+  param: { module: admin }
+
+redirect:
+  url:   /*
+  param: { module: tinyurl, action: redirect }
